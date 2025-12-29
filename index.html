@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Essential Charset & Viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO Tags -->
+   <title>
+Rajukrishna Auto Workshop | Engine Repair & Gearbox Specialist in Surkhet
+</title>
+
+<meta name="description"
+content="Rajukrishna Auto Workshop in Surkhet specializes in engine overhaul, gearbox repair, clutch replacement and oil services. Trusted mechanics, honest pricing, fast service." />
+
+    <meta name="keywords"
+        content="engine repair [Your City], engine overhaul [Your City], gearbox repair, clutch replacement, oil change service, timing belt [Your City], internal car repair, auto garage [Your City], car mechanic near me" />
+    <meta name="author" content="RajuKrishna_Auto_Workshop" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourdomain.com/" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:title" content="GarageMate – Engine & Internal Repair Specialists in [Your City]" />
+    <meta property="og:description"
+        content="Professional engine overhaul, gearbox, clutch, oil service & internal repairs. Honest pricing and reliable service." />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/3806246/pexels-photo-3806246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:site_name" content="GarageMate" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GarageMate – Engine & Internal Repair Specialists" />
+    <meta name="twitter:description"
+        content="Expert engine & internal mechanical repairs in [Your City]. Call for honest service." />
+    <meta name="twitter:image"
+        content="https://images.pexels.com/photos/3806246/pexels-photo-3806246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+
+
+        <meta name="theme-color" content="#dc2626">
+
+    <!-- Security Headers (best-effort for static sites) -->
+<meta http-equiv="Content-Security-Policy"
+content="
+default-src 'self';
+script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+img-src 'self' data: https:;
+frame-src https://www.google.com;
+connect-src 'self';
+frame-ancestors 'none';
+">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Tailwind CSS, Icons & Font -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- LocalBusiness Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AutoRepair",
+            "name": "Rajukrishna Auto Workshop",
+            "image": "https://images.pexels.com/photos/3806246/pexels-photo-3806246.jpeg",
+            "url": "https://yourdomain.com",
+            "telephone": "+911234567890",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Your Street Address",
+                "addressLocality": "Surkhet",
+                "addressRegion": "Karnali",
+                "postalCode": "21700",
+                "addressCountry": "NP"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "[Latitude]",
+                "longitude": "[Longitude]"
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                    
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+            }],
+            "description": "Specialist garage focusing exclusively on engine overhaul, oil service, gearbox, clutch, timing belt and internal mechanical repairs."
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.8s ease;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .card-hover {
+            transition: all 0.4s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ef4444, #b91c1c);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #dc2626, #991b1b);
+            transform: translateY(-2px);
+        }
+
+        details summary {
+            cursor: pointer;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details summary::after {
+            content: " +";
+            float: right;
+            font-weight: bold;
+        }
+
+        details[open] summary::after {
+            content: " −";
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-red-700">GarageMate</h1>
+            <nav class="hidden md:flex gap-8 font-medium text-lg">
+                <a href="#home" class="hover:text-red-700 transition">Home</a>
+                <a href="#services" class="hover:text-red-700 transition">Services</a>
+                <a href="#process" class="hover:text-red-700 transition">Process</a>
+                <a href="#why" class="hover:text-red-700 transition">Why Us</a>
+                <a href="#tips" class="hover:text-red-700 transition">Tips</a>
+                <a href="#faq" class="hover:text-red-700 transition">FAQ</a>
+                <a href="#contact" class="hover:text-red-700 transition">Contact</a>
+            </nav>
+            <div class="flex gap-4 mt-3 md:mt-0">
+                <a href="tel:+911234567890"
+                    class="btn-primary text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 shadow-lg transition hidden sm:flex">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/911234567890"
+                    class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 shadow-lg hover:bg-emerald-700 transition-all">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative h-screen overflow-hidden">
+        <div class="hero-slide active" style="
+          background-image: url('https://images.pexels.com/photos/3806246/pexels-photo-3806246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        "></div>
+        <div class="hero-slide" style="
+          background-image: url('https://images.pexels.com/photos/4483439/pexels-photo-4483439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        "></div>
+        <div class="hero-slide" style="
+          background-image: url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        "></div>
+
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        <div class="relative h-full flex items-center justify-center text-center px-6">
+            <div class="max-w-4xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                    Engine & Internal Mechanical Specialists in [Your City]
+                </h2>
+                <p class="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto mb-10">
+                    We focus on what matters most — the heart of your vehicle.<br class="hidden md:block" />
+                    No paint jobs. No shortcuts. Only precise internal mechanical work.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="tel:+911234567890"
+                        class="btn-primary text-white py-4 px-10 rounded-lg text-xl font-bold shadow-2xl flex items-center justify-center gap-3 transition">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/911234567890?text=Hi,%20I%20need%20engine%20service"
+                        class="bg-green-600 text-white py-4 px-10 rounded-lg text-xl font-bold shadow-2xl flex items-center justify-center gap-3 hover:bg-emerald-700 transition-all">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                Our Specialized Services
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-engine text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-4">Full Engine Overhaul</h3>
+                    <p class="text-lg leading-relaxed">
+                        Complete disassembly, inspection, machining coordination,
+                        replacement of pistons, rings, bearings, gaskets and seals. Torque
+                        specs followed exactly as manufacturer guidelines.
+                    </p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-cogs text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-4">
+                        Gearbox & Transmission Repair
+                    </h3>
+                    <p class="text-lg leading-relaxed">
+                        Manual and automatic gearbox diagnosis, clutch plate replacement,
+                        synchronizer repair, fluid flushing and performance testing.
+                    </p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-oil-can text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-4">
+                        Oil & Preventive Maintenance
+                    </h3>
+                    <p class="text-lg leading-relaxed">
+                        High-quality oil, OEM filters, inspection of engine health, leak
+                        detection and preventive guidance to extend engine life.
+                    </p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-link text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-4">
+                        Timing Belt / Chain Service
+                    </h3>
+                    <p class="text-lg leading-relaxed">
+                        Precise replacement of timing belts/chains, tensioners and related
+                        components with strict adherence to timing marks.
+                    </p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-clutch text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-4">
+                        Clutch & Flywheel Repair
+                    </h3>
+                    <p class="text-lg leading-relaxed">
+                        Clutch kit replacement, flywheel machining or replacement,
+                        hydraulic system bleeding for smooth operation.
+                    </p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-search-dollar text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-4">
+                        Advanced Engine Diagnostics
+                    </h3>
+                    <p class="text-lg leading-relaxed">
+                        Modern OBD scanning, compression testing, leak-down testing and
+                        accurate fault identification.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-24 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-16">
+                Our Transparent Work Process
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="text-6xl font-bold text-red-600">1</div>
+                    <h3 class="text-2xl font-semibold">Free Diagnosis & Inspection</h3>
+                    <p class="text-lg">
+                        We thoroughly check your vehicle with modern tools at no initial
+                        cost.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-6xl font-bold text-red-600">2</div>
+                    <h3 class="text-2xl font-semibold">Clear & Honest Quotation</h3>
+                    <p class="text-lg">
+                        Detailed breakdown of required repairs and costs — no hidden fees.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-6xl font-bold text-red-600">3</div>
+                    <h3 class="text-2xl font-semibold">Precision Repair & Delivery</h3>
+                    <p class="text-lg">
+                        Expert repair, multi-point testing, and clean delivery with
+                        advice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-16">
+                Why Choose GarageMate?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-lg">
+                <div class="space-y-4">
+                    <i class="fas fa-tools text-5xl text-red-600"></i>
+                    <h3 class="text-2xl font-semibold">True Engine Specialists</h3>
+                    <p>
+                        We only do internal mechanical work — no distractions, just deep
+                        expertise.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-handshake text-5xl text-red-600"></i>
+                    <h3 class="text-2xl font-semibold">100% Honest Pricing</h3>
+                    <p>You see and approve every cost before we start. No surprises.</p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-award text-5xl text-red-600"></i>
+                    <h3 class="text-2xl font-semibold">Certified & Experienced</h3>
+                    <p>
+                        Mechanics trained on latest engines with years of specialized
+                        experience.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-wrench text-5xl text-red-600"></i>
+                    <h3 class="text-2xl font-semibold">Modern Diagnostic Tools</h3>
+                    <p>
+                        Latest OBD scanners and testing equipment for accurate diagnosis.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-shield-alt text-5xl text-red-600"></i>
+                    <h3 class="text-2xl font-semibold">Warranty on Work</h3>
+                    <p>Service-based warranty on parts and labor for peace of mind.</p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-clock text-5xl text-red-600"></i>
+                    <h3 class="text-2xl font-semibold">Fast Turnaround</h3>
+                    <p>
+                        We respect your time — efficient service without compromising
+                        quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance Tips (Helpful Content for Users) -->
+    <section id="tips" class="py-24 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-16">
+                Engine Maintenance Tips
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-lg">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Regular Oil Changes</h3>
+                    <p>
+                        Change oil every 5,000–10,000 km depending on your vehicle and
+                        driving conditions to prevent engine wear.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">
+                        Listen to Unusual Sounds
+                    </h3>
+                    <p>
+                        Knocking, ticking or grinding noises often indicate internal
+                        issues — get checked early to avoid major damage.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Check Engine Light</h3>
+                    <p>
+                        Never ignore the check engine light — it can indicate minor or
+                        serious problems.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Timing Belt Maintenance</h3>
+                    <p>
+                        Replace timing belt every 60,000–100,000 km to prevent
+                        catastrophic engine failure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                Frequently Asked Questions
+            </h2>
+            <div class="space-y-8 max-w-4xl mx-auto">
+                <details class="bg-slate-50 p-6 rounded-xl shadow-lg">
+                    <summary class="text-xl font-semibold">
+                        Do you handle bodywork or painting?
+                    </summary>
+                    <p class="mt-4 text-lg">
+                        No — we specialize only in internal engine and mechanical repairs
+                        to deliver the highest expertise.
+                    </p>
+                </details>
+                <details class="bg-slate-50 p-6 rounded-xl shadow-lg">
+                    <summary class="text-xl font-semibold">
+                        What warranty do you provide?
+                    </summary>
+                    <p class="mt-4 text-lg">
+                        We offer warranty on parts and labor based on the repair type
+                        (typically 3–12 months).
+                    </p>
+                </details>
+                <details class="bg-slate-50 p-6 rounded-xl shadow-lg">
+                    <summary class="text-xl font-semibold">
+                        How long does an engine overhaul take?
+                    </summary>
+                    <p class="mt-4 text-lg">
+                        Usually 5–10 days depending on parts availability. We keep you
+                        updated daily.
+                    </p>
+                </details>
+                <details class="bg-slate-50 p-6 rounded-xl shadow-lg">
+                    <summary class="text-xl font-semibold">
+                        Do you use genuine parts?
+                    </summary>
+                    <p class="mt-4 text-lg">
+                        Yes — we use OEM or high-quality equivalent parts for reliability
+                        and performance.
+                    </p>
+                </details>
+                <details class="bg-slate-50 p-6 rounded-xl shadow-lg">
+                    <summary class="text-xl font-semibold">
+                        Can I get a free diagnosis?
+                    </summary>
+                    <p class="mt-4 text-lg">
+                        Yes — basic diagnostic inspection is free. Detailed testing may
+                        have a small fee (deducted from repair cost).
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-slate-900 text-white text-center">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                Contact GarageMate Today
+            </h2>
+            <p class="text-xl mb-12">
+                Call or WhatsApp for expert engine & internal repair service
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+                <a href="tel:+911234567890"
+                    class="btn-primary text-white py-4 px-10 rounded-lg text-xl font-bold shadow-2xl flex items-center justify-center gap-3 transition">
+                    <i class="fas fa-phone"></i> (+91) 12345 67890
+                </a>
+                <a href="https://wa.me/911234567890"
+                    class="bg-green-600 text-white py-4 px-10 rounded-lg text-xl font-bold shadow-2xl flex items-center justify-center gap-3 transition">
+                    <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                </a>
+            </div>
+            <p class="text-lg">
+                Address: Your Full Address Here, [Your City], [PIN Code]
+            </p>
+            <p class="mt-6 text-lg">
+                Working Hours: Monday – Saturday: 9:00 AM – 7:00 PM | Sunday: Closed
+            </p>
+            <div class="mt-12">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK" width="100%" height="400"
+                    style="border: 0; border-radius: 20px" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="bg-slate-950 text-slate-300 pt-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+
+        <!-- About -->
+        <div>
+            <h3 class="text-2xl font-bold text-white mb-4">GarageMate</h3>
+            <p class="leading-relaxed">
+                Engine & internal mechanical specialists delivering honest, precise
+                and warranty-backed automotive repairs in [Your City].
+            </p>
+        </div>
+
+        <!-- Services -->
+        <div>
+            <h4 class="text-xl font-semibold text-white mb-4">Services</h4>
+            <ul class="space-y-2">
+                <li>Engine Overhaul</li>
+                <li>Gearbox Repair</li>
+                <li>Clutch Replacement</li>
+                <li>Timing Belt Service</li>
+                <li>Oil Maintenance</li>
+            </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+                <li><a href="#services" class="hover:text-white">Services</a></li>
+                <li><a href="#why" class="hover:text-white">Why Us</a></li>
+                <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+                <li><a href="#contact" class="hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+            <h4 class="text-xl font-semibold text-white mb-4">Contact</h4>
+            <p>📍 [Your Address]</p>
+            <p class="mt-2">📞 +91 12345 67890</p>
+            <p class="mt-2">🕒 Mon–Sat: 9AM – 7PM</p>
+        </div>
+    </div>
+
+    <div class="border-t border-slate-800 mt-12 py-6 text-center text-sm">
+        © 2025 GarageMate. All rights reserved.
+    </div>
+</footer>
+
+
+    <!-- Mobile Floating Buttons - Small & Clean -->
+    <div class="fixed bottom-4 left-4 right-4 flex justify-center gap-5 z-50 md:hidden">
+        <a href="tel:+911234567890"
+            class="btn-primary text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition hover:scale-110">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/911234567890?text=Hi,%20I%20need%20engine%20repair"
+            class="bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition hover:scale-110">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <script>
+let slides = document.querySelectorAll('.hero-slide');
+let index = 0;
+setInterval(() => {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[index].classList.add('active');
+    index = (index + 1) % slides.length;
+}, 5000);
+</script>
+
+</body>
+
+</html>
