@@ -116,6 +116,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         html {
@@ -497,6 +498,7 @@
         
             display: flex;
             align-items: center;
+            background-color: #686869;
 
             background-size: cover;
             background-position: center;
@@ -507,6 +509,7 @@
         }
 
         .hero-content {
+          
             max-width: 800px;
             color: white;
             animation: fadeUp 1s ease;
@@ -517,10 +520,10 @@
             align-items: center;
             gap: 10px;
             padding: 12px 25px;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(16, 6, 82, 0.202);
             backdrop-filter: blur(10px);
             border-radius: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 0px solid rgba(255, 255, 255, 0.2);
             margin-bottom: 30px;
             animation: slideInLeft 0.8s ease;
         }
@@ -995,6 +998,11 @@
             background: none;
             margin-bottom: 10px;
         }
+        .hours-text p{
+           text-decoration:brown;
+         font-weight: bold;
+            color: rgb(54, 54, 55);
+        }
 
         .hours-display {
             display: flex;
@@ -1196,13 +1204,14 @@
         }
 
         .back-to-top {
-            position: fixed;
-            bottom: 120px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
-            color: white;
+            position: fixed;    
+            width: 30px;
+            height: 30px;
+         background: rgb(255, 255, 255, 0.15);     /* Light glass (adjust for dark/light theme) */
+    /* For dark themes: rgba(0, 0, 0, 0.2) */
+    backdrop-filter: blur(12px);              /* The frosted blur effect */
+    -webkit-backdrop-filter: blur(12px);
+            color: black;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -1213,8 +1222,9 @@
             opacity: 0;
             transform: translateY(20px);
             transition: var(--transition);
-            z-index: 998;
+            z-index:1000;
             border: none;
+
         }
 
         .back-to-top.show {
@@ -1323,8 +1333,8 @@
             }
             
             .back-to-top {
-                bottom: 100px;
-                right: 20px;
+                bottom: 80%;
+               right: 10px;
             }
         }
 
@@ -1433,13 +1443,15 @@
         <button class="mobile-menu-close" id="mobileMenuClose">
             <i class="fas fa-times"></i>
         </button>
+
+           
         <nav class="mobile-nav">
             <a href="#home"><i class="fas fa-home"></i> Home</a>
             <a href="#services"><i class="fas fa-cogs"></i> Services</a>
             <a href="#about"><i class="fas fa-info-circle"></i> About</a>
             <a href="#why"><i class="fas fa-star"></i> Why Us</a>
             <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
-            <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid var(--light-gray);">
+            <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid var(--light-gray);text-align: center;">
                 <a href="tel:+9779858032893" class="btn btn-primary" style="width: 100%; margin-bottom: 15px;">
                     <i class="fas fa-phone"></i> Call: 9858032893
                 </a>
@@ -1904,8 +1916,8 @@
                 
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d875.8729373988264!2d81.62434126959603!3d28.585020998480672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM1JzA2LjEiTiA4McKwMzcnMzAuMCJF!5e1!3m2!1sen!2snp!4v1767219144025!5m2!1sen!2snp" 
-                    width="600" 
-                    height="450" 
+                    width="400" 
+                    height="250" 
                     style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
@@ -1998,6 +2010,30 @@
             }, 1500);
         });
 
+        // Custom Smooth Scroll Function (reliable, no CSS needed)
+function smoothScrollTo(targetPosition, duration = 800) {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        // Ease-out-quart easing (feels natural – starts fast, slows gently)
+        const easing = 1 - Math.pow(1 - progress, 4);
+
+        window.scrollTo(0, startPosition + distance * easing);
+
+        if (progress < 1) {
+            requestAnimationFrame(animation);
+        }
+    }
+
+    requestAnimationFrame(animation);
+}
+
         // Header Scroll Effect
         const header = document.getElementById('header');
         const progressBar = document.querySelector('.progress-bar');
@@ -2046,11 +2082,9 @@
         });
 
         // Back to Top
-        document.getElementById('backToTop').addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+document.getElementById('backToTop').addEventListener('click', (e) => {
+            e.preventDefault();
+            smoothScrollTo(0, 800); // 800ms duration – change to 600 for faster, 1000 for slower
         });
 
         // FAQ Accordion
@@ -2101,7 +2135,7 @@
 
         counters.forEach(counter => observer.observe(counter));
 
-        // Smooth Scroll for Anchor Links
+          // Smooth Scroll for Anchor Links (now using custom smooth function)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -2110,14 +2144,10 @@
                 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
+                    smoothScrollTo(targetElement.offsetTop - 100, 800);
                 }
             });
         });
-
         // Add hover effect to service cards
         document.querySelectorAll('.service-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
